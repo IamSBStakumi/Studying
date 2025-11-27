@@ -22,7 +22,9 @@ REST とは Roy Fielding 氏によって提唱されたアーキテクチャス�
 - 接続性
 - ステートレス性
 
-統一インターフェースやステートレス性の考え方は、両者で共通している。
+統一インターフェースやステートレス性の考え方は、両者で共通しているように思える。
+しかし、4 原則における統一インターフェースは CRUD と HTTP メソッドを一貫させようという話が見られる。
+(Fielding 氏は CRUD の件には触れていない)
 
 ## 6 原則の詳細
 
@@ -61,6 +63,7 @@ REST とは Roy Fielding 氏によって提唱されたアーキテクチャス�
 基本的にクライアント側で状態を保持し、サーバとのやり取りで必要な情報は
 URI と HTTP メソッドだけで表現することが推奨されている。
 
-## 参考文献
+## 参考
 
 1. [AWS RESTful API とは](https://aws.amazon.com/jp/what-is/restful-api/#seo-faq-pairs#what-is-rest)
+2. [Roy Fielding 氏のブログ REST APIs must be hypertext-driven](https://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven)
